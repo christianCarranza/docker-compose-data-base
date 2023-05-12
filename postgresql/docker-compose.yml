@@ -1,0 +1,19 @@
+# docker compose de postgresql
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: postgresql
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: Password123
+      POSTGRES_USER: root
+    ports:
+      - 5432:5432
+    volumes:
+      - ./data:/var/lib/postgresql/data
+
+
+
+  
