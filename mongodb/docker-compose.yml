@@ -3,7 +3,7 @@ version: '3.8'
 services:
 
   mongodb:
-    image: mongo:latest
+    image: mongo
     restart: always
     container_name: mongodb
     ports:
@@ -12,5 +12,5 @@ services:
       - ./data:/data/db
       - ./data/log:/var/log/mongodb
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=Password123
+      - MONGO_INITDB_ROOT_USERNAME=
+      - MONGO_INITDB_ROOT_PASSWORD=
