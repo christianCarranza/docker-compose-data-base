@@ -9,7 +9,7 @@ services:
       - 50001:50000
     volumes:
       - ./data:/var/jenkins_home
-    restart: always
+    # restart: always
     networks:
       - net_jenkins
 

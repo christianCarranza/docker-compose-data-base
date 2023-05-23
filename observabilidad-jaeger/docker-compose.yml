@@ -1,0 +1,13 @@
+#docker compose jaeger
+version: '3.8'
+
+services:
+  jaeger:
+    image: jaegertracing/all-in-one:1.27
+    container_name: jaeger
+    ports:
+      - '16686:16686' # Puerto para el panel de Jaeger
+      - '6831:6831/udp' # Puerto para recibir trazas UDP
+    # restart: always
+
+

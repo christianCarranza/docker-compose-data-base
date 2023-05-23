@@ -5,7 +5,7 @@ services:
   db:
     image: postgres:latest
     container_name: postgresql
-    restart: always
+    # restart: always
     environment:
       POSTGRES_PASSWORD: Password123
       POSTGRES_USER: root
